@@ -1,0 +1,44 @@
+.pied {
+    background-color: black;
+    width: 100%;
+    margin-top: unset;
+    padding-bottom: 20px;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+    &__logo {
+        color: $couleur-texte-footer;
+        font-size: 20pt;
+        font-family: 'Shrikhand';
+        margin-top: unset;
+        padding-left: 40px;
+        padding-top: 20px;
+        @media screen and (min-width:768px) {
+            font-size: 50px;
+        }
+    }
+    &__paragraphes {
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 60%;
+        }
+        &__paragraphe {
+            color: $couleur-texte-footer;
+            padding-left: 40px;
+            &__icone-couverts {
+                color: $couleur-texte-footer;
+                margin-right: 10px;
+            }
+            &__icone-mains {
+                color: $couleur-texte-footer;
+                margin-right: 10px;
+            }
+        }
+    }
+}
