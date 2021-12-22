@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Font*/
 @font-face {
   font-family: "Shrikhand";
@@ -54,17 +53,23 @@
     font-size: 50px;
   }
 }
+.pied__paragraphes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 @media screen and (min-width: 768px) {
   .pied__paragraphes {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 60%;
+    justify-content: space-between;
+    width: 90%;
   }
 }
 .pied__paragraphes__paragraphe {
   color: #fff;
   padding-left: 40px;
+  text-decoration: unset;
 }
 .pied__paragraphes__paragraphe__icone-couverts {
   color: #fff;
@@ -378,23 +383,25 @@ img {
 .section-fonctionnement__etape__liste-etapes__etape:hover > .section-fonctionnement__etape__liste-etapes__etape__icone {
   color: #9356DC;
 }
-.section-fonctionnement__etape__liste-etapes__etape__numéro {
+.section-fonctionnement__etape__liste-etapes__etape__numero {
   background-color: #9356DC;
   color: white;
   border-radius: 50%;
   padding-left: 8px;
   padding-right: 8px;
+  margin-left: -30px;
 }
 @media screen and (min-width: 768px) {
-  .section-fonctionnement__etape__liste-etapes__etape__numéro {
+  .section-fonctionnement__etape__liste-etapes__etape__numero {
     font-size: 35px;
     padding-left: 15px;
     padding-right: 15px;
     width: 3%;
+    margin-left: -40px;
   }
 }
 @media screen and (min-width: 1199px) {
-  .section-fonctionnement__etape__liste-etapes__etape__numéro {
+  .section-fonctionnement__etape__liste-etapes__etape__numero {
     font-size: 40px;
     padding-left: 17px;
     padding-right: 17px;

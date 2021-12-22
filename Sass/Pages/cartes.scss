@@ -187,17 +187,19 @@
             color: $couleur-primaire;
           }
         }
-        &__numéro {
+        &__numero {
           background-color: $couleur-primaire;
           color: white;
           border-radius: 50%;
           padding-left: 8px;
           padding-right: 8px;
+          margin-left: -30px;
           @media screen and (min-width:768px) {
             font-size: 35px;
             padding-left: 15px;
             padding-right: 15px;
             width: 3%;
+            margin-left: -40px;
           }
           @media screen and (min-width:1199px) {
             font-size: 40px;
