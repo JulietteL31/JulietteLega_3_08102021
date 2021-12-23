@@ -9,9 +9,15 @@
 @import "./Layout/footer.scss";
 @import "./Layout/body-width.scss";
 @import "./Layout/photos.scss";
+@import "./Layout/en-tete.scss";
+@import "./Layout/spinner.scss";
 
 /*Components*/
 @import "./Components/animation-apparition.scss";
+@import "./Components/bouton.scss";
+@import "./Components/coeur-degrade.scss";
+@import "./Components/anim-survol-plat.scss";
+@import "./Components/nouveau.scss";
 
 /*Pages*/
 @import "./Pages/cartes.scss";

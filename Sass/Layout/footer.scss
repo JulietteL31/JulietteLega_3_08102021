@@ -8,7 +8,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 150px;
     }
     &__logo {
         color: $couleur-texte-footer;
@@ -34,14 +33,15 @@
         &__paragraphe {
             color: $couleur-texte-footer;
             padding-left: 40px;
+            padding-bottom: 5px;
             text-decoration: unset;
             &__icone-couverts {
                 color: $couleur-texte-footer;
-                margin-right: 10px;
+                margin-right: 12px;
             }
             &__icone-mains {
                 color: $couleur-texte-footer;
-                margin-right: 10px;
+                margin-right: 6px;
             }
         }
     }

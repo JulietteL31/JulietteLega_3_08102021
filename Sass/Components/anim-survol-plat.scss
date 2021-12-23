@@ -1,0 +1,71 @@
+.menu__liste__carte {
+    margin-left: 30px;
+    opacity: 0;
+    background-color: white;
+    display: flex;
+    width: 30%;
+    margin: 1rem 0;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px #00000066;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    &__texte {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+        font-size: smaller;
+        &__titre {
+            margin: 0px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        &__prix {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-left: 0.5rem;
+            font-weight: bold;
+        }
+    }
+    &__texte p {
+        text-overflow: ellipsis;
+    }
+    &--survol {
+        background-color: #99e2d0;
+        margin: -1rem -9rem -1rem 2rem;
+        width: 8rem;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        transition-duration: 0.5s;
+        align-items: center;
+        height: 9rem;
+        @media screen and (min-width:1000px) {
+            margin-right: -7rem;
+            width: 6rem;
+        }
+        &__icone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            background-color: none;
+            color: white;
+            font-size: 27px;
+            transform: rotate(360deg);
+            transition: all 1s;
+        }
+    }
+}
+
+
+.menu__liste__carte:hover .menu__liste__carte--survol {
+    margin-right: -1rem;
+}
+
+
+.menu__liste__carte:hover .menu__liste__carte--survol__icone {
+    transform: rotate(0);
+}

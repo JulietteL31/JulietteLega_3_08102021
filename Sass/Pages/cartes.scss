@@ -20,7 +20,8 @@
     display: flex;
     flex-direction: column;
     border-collapse: separate;
-    @media screen and (min-width: 769px) {
+    position: relative;
+    @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-flow: wrap;
       justify-content: space-around;
@@ -39,22 +40,8 @@
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        &__icone__solid {
-          font-size: 20pt;
-          color: $couleur-secondaire;
-          display: none;
-        }
-        &__icone__regular {
-            font-size: 20pt;
-            &:hover {
-                display: none;
-                &+.fas {
-                    display: block;
-                }
-            }
-        }
       }
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 768px) {
         width: 45%;
       }
     }
@@ -64,17 +51,6 @@
     width: 90%;
     margin: auto;
   }
-}
-
-.photo1,
-.photo2,
-.photo3,
-.photo4 {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  background-size: cover;
-  width: 100%;
-  height: 200px;
 }
 
 .section-loc {
@@ -106,30 +82,6 @@
     &__paragraphe {
       @media screen and (min-width:768px) {
         font-size: 20px;
-      }
-    }
-    &__bouton {
-      width: 50%;
-      padding-bottom: 10px;
-      padding-top: 30px;
-      height: 30%;
-      border-radius: 40px;
-      background: linear-gradient($couleur-secondaire, $couleur-primaire);
-      padding: 15px;
-      margin-top: 40px;
-      margin-bottom: 30px;
-      color: white;
-      font-size: 20px;
-      text-align: center;
-      box-shadow: 2px 2px 5px grey;
-      border: unset;
-      @media screen and (min-width:768px) {
-        width: 30%;
-        height: 80px;
-        font-size: 25px;
-      }
-      @media screen and (min-width:1199px) {
-        width: 20%;
       }
     }
   }
@@ -183,9 +135,10 @@
         font-size: 20px;
         &:hover {
           background: rgba($color: $couleur-primaire, $alpha: 0.2);
-          & > .section-fonctionnement__etape__liste-etapes__etape__icone {
-            color: $couleur-primaire;
-          }
+          cursor: pointer;
+        }
+        &:hover > .section-fonctionnement__etape__liste-etapes__etape__i-et-p > .section-fonctionnement__etape__liste-etapes__etape__i-et-p__icone {
+          color: $couleur-primaire;
         }
         &__numero {
           background-color: $couleur-primaire;

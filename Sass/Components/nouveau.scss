@@ -1,0 +1,21 @@
+.nouveau {
+    border: solid 1px $couleur-tertiaire;
+    background-color: $couleur-tertiaire;
+    width: 95px;
+    position: relative;
+    margin-top: -190px;
+    margin-left: 80%;
+    text-align: center;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.nouveau p {
+    margin: 6px;
+    padding: unset;
+    align-self: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
