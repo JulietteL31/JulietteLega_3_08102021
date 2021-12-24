@@ -15,8 +15,7 @@
   }
   &__cartes {
     width: 90%;
-    margin: auto;
-    margin-top: 30px;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     border-collapse: separate;
@@ -34,6 +33,7 @@
       transition: all 300ms;
       &:hover {
           transform: scale(1.05);
+          color: $couleur-primaire;
       }
       &__sous-titre {
         display: flex;
