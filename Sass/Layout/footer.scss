@@ -11,13 +11,13 @@
     }
     &__logo {
         color: $couleur-texte-footer;
-        font-size: 20pt;
+        font-size: 30px;
         font-family: 'Shrikhand';
         margin-top: unset;
         padding-left: 40px;
         padding-top: 20px;
         @media screen and (min-width:768px) {
-            font-size: 50px;
+            margin-left: 0;
         }
     }
     &__paragraphes {
@@ -35,6 +35,7 @@
             padding-left: 40px;
             padding-bottom: 5px;
             text-decoration: unset;
+            font-size: 15px;
             &__icone-couverts {
                 color: $couleur-texte-footer;
                 margin-right: 12px;

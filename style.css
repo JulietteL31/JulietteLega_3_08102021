@@ -41,7 +41,7 @@
 }
 .pied__logo {
   color: #fff;
-  font-size: 20pt;
+  font-size: 30px;
   font-family: "Shrikhand";
   margin-top: unset;
   padding-left: 40px;
@@ -49,7 +49,7 @@
 }
 @media screen and (min-width: 768px) {
   .pied__logo {
-    font-size: 50px;
+    margin-left: 0;
   }
 }
 .pied__paragraphes {
@@ -70,6 +70,7 @@
   padding-left: 40px;
   padding-bottom: 5px;
   text-decoration: unset;
+  font-size: 15px;
 }
 .pied__paragraphes__paragraphe__icone-couverts {
   color: #fff;
@@ -102,6 +103,17 @@ body {
 
 .photo {
   position: relative;
+  height: 185px;
+}
+@media screen and (min-width: 500px) {
+  .photo {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .photo {
+    height: 350px;
+  }
 }
 
 @media screen and (min-width: 1199px) {
@@ -117,8 +129,8 @@ body {
   margin-top: -100px;
 }
 .en-tete__logo {
-  width: 40%;
-  padding-left: 30%;
+  width: 20%;
+  padding-left: 40%;
 }
 @media screen and (min-width: 768px) {
   .en-tete__logo {
@@ -126,7 +138,7 @@ body {
   }
 }
 .en-tete__icone {
-  font-size: 20pt;
+  font-size: 15pt;
 }
 
 .lds-spinner {
@@ -334,15 +346,15 @@ header, section, footer, img {
 }
 
 .bouton {
-  width: 70%;
+  width: 50%;
   height: 30%;
   border-radius: 40px;
   background: linear-gradient(#FF79DA, #9356DC);
-  padding: 15px;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   box-shadow: 2px 2px 5px grey;
   border: unset;
@@ -352,11 +364,10 @@ header, section, footer, img {
   transform: scale(1.1);
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .bouton {
-    width: 30%;
-    height: 80px;
-    font-size: 25px;
+    width: 40%;
+    height: 50px;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -495,7 +506,7 @@ header, section, footer, img {
   padding: unset;
   align-self: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: green;
 }
@@ -508,7 +519,6 @@ header, section, footer, img {
   margin: auto;
   background-color: whitesmoke;
   padding-top: 20px;
-  padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .section-restaurants__titre {
@@ -550,6 +560,12 @@ header, section, footer, img {
   align-items: center;
   width: 100%;
 }
+.section-restaurants__cartes__resto__sous-titre__nom__titre2 {
+  font-size: 18px;
+}
+.section-restaurants__cartes__resto__sous-titre__nom__sous-titre2 {
+  font-size: 15px;
+}
 @media screen and (min-width: 768px) {
   .section-restaurants__cartes__resto {
     width: 45%;
@@ -578,55 +594,60 @@ header, section, footer, img {
 }
 @media screen and (min-width: 768px) {
   .section-loc__bandeau-loc {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 .section-loc__bandeau-loc__icone-loc {
   padding-right: 15px;
 }
+.section-loc__bandeau-loc__paragraphe-loc {
+  margin: 5px;
+}
 .section-loc__corps-loc {
   background-color: whitesmoke;
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 .section-loc__corps-loc__titre {
   margin-top: unset;
 }
+.section-loc__corps-loc__paragraphe {
+  font-size: 15px;
+}
 @media screen and (min-width: 768px) {
   .section-loc__corps-loc__paragraphe {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 .titre1 {
   font-family: "Roboto-medium";
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .section-fonctionnement {
   height: auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-@media screen and (min-width: 768px) {
-  .section-fonctionnement {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-  }
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .section-fonctionnement__titre {
   margin-left: 2rem;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .section-fonctionnement__titre {
     text-align: center;
     margin-left: unset;
-    padding-bottom: 20px;
   }
 }
 .section-fonctionnement__etape {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .section-fonctionnement__etape {
+    align-items: center;
+  }
 }
 .section-fonctionnement__etape__liste-etapes {
   width: 90%;
@@ -634,11 +655,11 @@ header, section, footer, img {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin: auto;
   align-items: center;
+  padding: 0;
 }
 .section-fonctionnement__etape__liste-etapes__etape {
-  width: 65%;
+  width: 80%;
   height: 20%;
   display: flex;
   flex-direction: row;
@@ -648,9 +669,8 @@ header, section, footer, img {
   box-shadow: 3px 3px 7px grey;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding: 1rem;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 .section-fonctionnement__etape__liste-etapes__etape:hover {
   background: rgba(147, 86, 220, 0.2);
@@ -665,22 +685,17 @@ header, section, footer, img {
   border-radius: 50%;
   padding-left: 8px;
   padding-right: 8px;
-  margin-left: -30px;
+  margin-left: -10px;
 }
 @media screen and (min-width: 768px) {
   .section-fonctionnement__etape__liste-etapes__etape__numero {
-    font-size: 35px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 3%;
-    margin-left: -40px;
+    font-size: 18px;
+    margin-left: -20px;
   }
 }
 @media screen and (min-width: 1199px) {
   .section-fonctionnement__etape__liste-etapes__etape__numero {
-    font-size: 40px;
-    padding-left: 17px;
-    padding-right: 17px;
+    font-size: 18px;
   }
 }
 .section-fonctionnement__etape__liste-etapes__etape__i-et-p {
@@ -695,14 +710,13 @@ header, section, footer, img {
   .section-fonctionnement__etape__liste-etapes__etape__i-et-p {
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 85%;
-    font-size: 35px;
+    width: 75%;
+    font-size: 18px;
     margin-left: 12%;
   }
 }
 @media screen and (min-width: 1199px) {
   .section-fonctionnement__etape__liste-etapes__etape__i-et-p {
-    width: 75%;
     margin-left: 18%;
   }
 }
@@ -727,9 +741,24 @@ header, section, footer, img {
     width: 75%;
   }
 }
+@media screen and (min-width: 950px) {
+  .section-fonctionnement__etape__liste-etapes__etape {
+    width: 65%;
+  }
+}
 @media screen and (min-width: 1199px) {
   .section-fonctionnement__etape__liste-etapes__etape {
     width: 55%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .section-fonctionnement__etape__liste-etapes__etape {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .section-fonctionnement__etape__liste-etapes__etape {
+    width: 35%;
   }
 }
 
@@ -746,10 +775,10 @@ header, section, footer, img {
   background-color: whitesmoke;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  margin: -60px auto unset auto;
+  margin-top: -60px;
   height: 80%;
   z-index: 1000;
-  padding-bottom: 75px;
+  padding-bottom: 45px;
 }
 .menu__titre {
   display: flex;
@@ -794,8 +823,9 @@ header, section, footer, img {
   border-radius: 20px;
   width: 90%;
   margin: 20px auto 5px auto;
-  height: 25%;
+  height: 70px;
   box-shadow: 2px 2px 10px gainsboro;
+  padding: 0;
 }
 .menu__liste__carte__texte {
   display: flex;
@@ -807,22 +837,38 @@ header, section, footer, img {
   margin: unset;
   text-overflow: ellipsis;
 }
-.menu__liste__carte__texte__description {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.menu__liste__carte__texte > p {
   text-overflow: ellipsis;
-}
-.menu__liste__carte__texte__description > p {
-  margin-bottom: unset;
+  overflow: hidden;
+  margin-bottom: 0;
 }
 
 .liste-plats {
   width: 100%;
 }
 
+@media screen and (min-width: 450px) {
+  .menu__liste__carte {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .menu__liste {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu__liste__carte {
+    width: 45%;
+    margin: 5px;
+  }
+
+  .menu__liste__titre {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1000px) {
   .liste-plats {
     display: flex;
