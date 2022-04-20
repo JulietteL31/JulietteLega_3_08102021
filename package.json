@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./Sass/main.scss:style.css -w --style compressed",
-    "prefix": "postcss style.css --use autoprefixer -d"
+    "sass": "sass --watch ./Sass/main.scss:./public/css/style.css -w --style compressed",
+    "prefix": "postcss .public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "author": "",
   "license": "ISC",
-  "browserlist": "last 4 versions"
+  "browserlist": "last 4 versions",
+  "devDependencies": {
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0"
+  }
 }
