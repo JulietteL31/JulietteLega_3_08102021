@@ -19,7 +19,15 @@
         margin: auto;
         padding-top: 10px;
         font-family: 'Shrikhand';
-        font-size: 20px;
+        &__h1 {
+            font-size: 20px;
+            @media screen and (min-width:600px) {
+                font-size: 25px;
+            }
+            @media screen and (min-width:1000px) {
+                font-size: 30px;
+            }
+        }
     }
     &__liste {
         display: flex;
@@ -32,7 +40,8 @@
             padding-top: 40px;
             &__h2 {
                 margin-bottom: 2px;
-                // font-family: 'Roboto Light'
+                font-family: 'Roboto';
+                font-size: 20px;
             }
             &__underline {
                 background-color: $couleur-tertiaire;
